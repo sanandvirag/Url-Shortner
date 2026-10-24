@@ -1,0 +1,95 @@
+.site-navbar {
+	align-items: center;
+	background: #000000;
+	border-bottom: 1px solid #222222;
+	display: flex;
+	justify-content: space-between;
+	min-height: 76px;
+	padding: 0 clamp(1.25rem, 5vw, 5rem);
+}
+
+.site-navbar__brand {
+	display: inline-flex;
+	line-height: 0;
+}
+
+.site-navbar__brand img {
+	height: auto;
+	width: 110px;
+}
+
+.site-navbar__links {
+	align-items: center;
+	display: flex;
+	gap: clamp(1rem, 3vw, 2rem);
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.site-navbar__links a {
+	color: #c4d2df;
+	font-size: 0.95rem;
+	font-weight: 600;
+	text-decoration: none;
+	transition: color 160ms ease;
+}
+
+.site-navbar__links a:hover,
+.site-navbar__links a:focus-visible {
+	color: #ffffff;
+}
+
+.site-navbar__logout {
+	padding: 0;
+	border: 0;
+	background: transparent;
+	color: #c4d2df;
+	font-size: 0.95rem;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.site-navbar__logout:hover,
+.site-navbar__logout:focus-visible {
+	color: #ffffff;
+}
+
+.site-navbar__signup {
+	background: #FF5A36;
+	border-radius: 7px;
+	color: #ffffff !important;
+	display: inline-block;
+	padding: 0.7rem 1.05rem;
+	transition: background 160ms ease, transform 160ms ease !important;
+}
+
+.site-navbar__signup:hover,
+.site-navbar__signup:focus-visible {
+	background: #FF5A36;
+	color: #ffffff !important;
+	transform: translateY(-1px);
+}
+
+@media (max-width: 480px) {
+	.site-navbar {
+		min-height: 68px;
+		padding: 0 1rem;
+	}
+
+	.site-navbar__brand img {
+		width: 92px;
+	}
+
+	.site-navbar__links {
+		gap: 0.75rem;
+	}
+
+	.site-navbar__links a {
+		font-size: 0.85rem;
+	}
+
+	.site-navbar__signup {
+		padding: 0.58rem 0.8rem;
+	}
+}

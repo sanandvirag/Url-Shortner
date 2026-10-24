@@ -1,0 +1,22 @@
+{
+  "benchmark": {
+    "targetVUs": 10,
+    "rampUp": "10s",
+    "duration": "60s",
+    "rampDown": "10s",
+    "thinkTimeSeconds": 1
+  },
+  "throughput": {
+    "requestsPerSecond": 159.60316183994635,
+    "totalRequests": 10114,
+    "iterationsPerSecond": 26.33751998327768
+  },
+  "latencyMilliseconds": {
+    "average": 455.1820668677073,
+    "p90": 1218.8207600000007,
+    "p95": 1489.1821450000014,
+    "p99": 0,
+    "maximum": 3742.7843
+  },
+  "errorRate": 0
+}

@@ -1,0 +1,82 @@
+.auth-page {
+  min-height: 100vh;
+  background: #f4f1eb;
+  color: #17211f;
+}
+
+.auth-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 460px);
+  gap: clamp(3rem, 9vw, 10rem);
+  align-items: center;
+  max-width: 1180px;
+  min-height: calc(100vh - 77px);
+  margin: 0 auto;
+  padding: 5rem clamp(1.25rem, 5vw, 5rem);
+}
+
+.auth-intro__index,
+.auth-card__kicker,
+.dashboard-kicker {
+  color: #e8562e;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.auth-intro h1 {
+  max-width: 650px;
+  margin: 1.4rem 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(3.3rem, 7vw, 6.4rem);
+  line-height: 0.96;
+  letter-spacing: -0.04em;
+}
+
+.auth-intro h1 em {
+  color: #e8562e;
+  font-style: normal;
+}
+
+.auth-intro > p {
+  max-width: 440px;
+  color: #5e6b67;
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+.auth-card {
+  display: grid;
+  gap: 1.25rem;
+  padding: clamp(1.5rem, 4vw, 2.8rem);
+  border: 1px solid #d7d4cc;
+  border-radius: 8px;
+  background: #fffdf8;
+  box-shadow: 16px 16px 0 #dedad1;
+}
+
+.auth-card h2 {
+  margin: 0.5rem 0 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2.3rem;
+}
+
+.auth-card__kicker { margin: 0; }
+.auth-card__hint { margin: 0.6rem 0 0; color: #6b7772; }
+.auth-card label { display: grid; gap: 0.45rem; color: #364440; font-size: 0.84rem; font-weight: 700; }
+.auth-card input { min-height: 52px; padding: 0 0.85rem; border: 1px solid #c8cec7; border-radius: 4px; background: #fffdf8; color: #17211f; outline: none; }
+.auth-card input:focus { border-color: #e8562e; box-shadow: 0 0 0 3px #e8562e22; }
+.auth-card__submit { display: flex; align-items: center; justify-content: space-between; min-height: 54px; margin-top: 0.4rem; padding: 0 1rem 0 1.15rem; border: 0; border-radius: 4px; background: #17211f; color: #fffdf8; font-weight: 800; cursor: pointer; }
+.auth-card__submit span { font-size: 1.5rem; }
+.auth-card__submit:hover { background: #e8562e; }
+.auth-card__submit:disabled { cursor: wait; opacity: 0.65; }
+.auth-card__switch { margin: 0; color: #6b7772; font-size: 0.9rem; }
+.auth-card__switch a { color: #e8562e; font-weight: 800; }
+.form-message { margin: 0; font-size: 0.9rem; }
+.form-message--error { color: #b33b2b; }
+
+@media (max-width: 760px) {
+  .auth-layout { grid-template-columns: 1fr; gap: 2.5rem; padding-top: 3rem; }
+  .auth-intro h1 { font-size: clamp(3rem, 15vw, 5rem); }
+  .auth-card { box-shadow: 8px 8px 0 #dedad1; }
+}

@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Url" ALTER COLUMN "userId" DROP NOT NULL;

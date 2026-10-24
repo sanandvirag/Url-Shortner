@@ -1,0 +1,6 @@
+.app-shell { min-height: 100vh; background: #050505; }
+.site-footer { display: flex; justify-content: space-between; max-width: 1060px; margin: 0 auto; padding: 0 1rem 2rem; color: #76827f; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; }
+
+@media (max-width: 560px) {
+	.site-footer { gap: 1rem; flex-direction: column; }
+}
